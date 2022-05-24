@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/image" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_instagram"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/instagram"
+            android:layout_marginEnd="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_ytb"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ytb"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_google"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/fb"
+            android:visibility="visible"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/btn_wpp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/twtt"
+            android:layout_marginEnd="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_twitter"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/wpp"
+            android:layout_marginEnd="20dp"/>
+
+
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_nameAPK"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="300dp"-->
+<!--        android:text="Smart Finance"-->
+<!--        android:textColor="#FF5722"-->
+<!--        android:textSize="50dp"-->
+<!--        android:textStyle="italic"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:id="@+id/txt_nameComp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="APk by Team event"
+        android:textColor="#FF5722"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
